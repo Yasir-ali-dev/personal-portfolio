@@ -19,8 +19,22 @@ const Section = () => {
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   return (
-    <Container className="py-md-5 py-3 container-full-screen" id="contact">
-      <h1 className="display-6 text-center">Contact Us</h1>
+    <Container
+      style={{ fontFamily: "roboto" }}
+      className="py-md-5 py-3 container-full-screen"
+      id="contact"
+    >
+      <h1
+        className="display-6 text-center"
+        style={{
+          color: "#40E0D0",
+          textShadow: "5px 3px 3px #048a7c",
+          fontWeight: "bold",
+          textTransform: "uppercase",
+        }}
+      >
+        Contact Us
+      </h1>
       <Row className="justify-content-center align-items-center ">
         <Col xs={12} md={6} className="py-md-3 py-sm-2 py-1">
           <motion.div
@@ -35,15 +49,24 @@ const Section = () => {
           >
             <h1 className="display-6 pb-3">Get in touch</h1>
             <p className="lead pb-2">
-              Hi there, I'm eager to connect and explore how we can work
-              together to bring your ideas to life. Feel free to contact me
-              using the form, and let's start the conversation.
+              Empowering your business with scalable solutions, we provide
+              innovative web development tailored for you. Our expertise ensures
+              seamless integration and exceptional performance, delivering a
+              robust and efficient web presence Offering cutting-edge web
+              development solutions with a focus on scalability and performance.
             </p>
             <div>
               <Image src="/whatsapp.svg" alt="whatsapp" className="me-3" />
-              <Image src="/linkedin.svg" alt="linkedin" className="me-3" />
-              <Image src="/github.svg" alt="github" className="me-3" />
               <Image src="/facebook.svg" alt="facebook" />
+              <a
+                href="https://www.linkedin.com/in/yasir-ali-30ab09241"
+                target="_blank"
+              >
+                <img src="/linkedin.png" alt="" srcset="" width={"45px"} />
+              </a>
+              <a href="https://github.com/Yasir-ali-dev" target="_blank">
+                <img src="/github.png" alt="" srcset="" width={"45px"} />
+              </a>
             </div>
           </motion.div>
         </Col>
@@ -59,7 +82,7 @@ const Section = () => {
                 type="text"
                 className="mb-3"
                 value={formDetails.firstName}
-                placeholder="First Name"
+                placeholder="Full Name"
                 onChange={(e) => onFormUpdate("firstName", e.target.value)}
               />
               <Form.Control
@@ -71,10 +94,10 @@ const Section = () => {
               />
               <Form.Control
                 as="textarea"
-                rows="5"
+                rows="7"
                 value={formDetails.message}
-                placeholder="Message"
-                className="mb-3"
+                placeholder="drop the message here"
+                className="mb-5"
                 style={{
                   boxShadow: "3px 3px 7px grey",
                   borderRadius: "5px",
@@ -87,6 +110,7 @@ const Section = () => {
                 style={{
                   boxShadow: "3px 3px 7px grey",
                   textTransform: "uppercase",
+                  backgroundColor: "#1E2A39",
                 }}
               >
                 Submit

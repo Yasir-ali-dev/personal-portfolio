@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="bg-body-tertiary">
+    <Navbar bg="dark" expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">Yasir.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
