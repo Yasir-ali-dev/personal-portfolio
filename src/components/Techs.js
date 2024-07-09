@@ -1,18 +1,8 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./index.css";
+
 const Techs = () => {
-  return (
-    <>
-      <section className="home section" id="home">
-        <div className="home__container container grid">
-          <div className="home__content grid">
-            <div className="home__img"></div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <></>;
 };
 
 export default Techs;

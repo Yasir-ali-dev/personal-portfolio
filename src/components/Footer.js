@@ -3,8 +3,14 @@ import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container>
-      <h1 className="lead text-center py-2">All Rights Reserved @Yasir Ali</h1>
+    <Container
+      fluid
+      className="py-2 mt-3"
+      style={{ backgroundColor: "#1E2A39", color: "#40E0D0" }}
+    >
+      <strong>
+        <h1 className="lead text-center">all rights reserved @Yasir Ali</h1>
+      </strong>
     </Container>
   );
 };

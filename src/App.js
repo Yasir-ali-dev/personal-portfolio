@@ -8,7 +8,6 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Techs from "./components/Techs";
 import Education from "./components/Education";
 function App() {
   return (

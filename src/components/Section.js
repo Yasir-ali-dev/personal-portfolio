@@ -78,32 +78,43 @@ const Section = () => {
             transition={{ duration: 0.5 }}
           >
             <Form onSubmit={handleSubmit} className="py-3">
-              <Form.Control
-                type="text"
-                className="mb-3"
-                value={formDetails.firstName}
-                placeholder="Full Name"
-                onChange={(e) => onFormUpdate("firstName", e.target.value)}
-              />
-              <Form.Control
-                type="email"
-                value={formDetails.email}
-                className="mb-3"
-                placeholder="Email Address"
-                onChange={(e) => onFormUpdate("email", e.target.value)}
-              />
-              <Form.Control
-                as="textarea"
-                rows="7"
-                value={formDetails.message}
-                placeholder="drop the message here"
-                className="mb-5"
-                style={{
-                  boxShadow: "3px 3px 7px grey",
-                  borderRadius: "5px",
-                }}
-                onChange={(e) => onFormUpdate("message", e.target.value)}
-              />
+              <label>
+                Full Name
+                <Form.Control
+                  type="text"
+                  className="mb-3"
+                  value={formDetails.firstName}
+                  placeholder="Full Name"
+                  onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                />
+              </label>
+              <label style={{ display: "block" }}>
+                {" "}
+                Email
+                <Form.Control
+                  type="email"
+                  value={formDetails.email}
+                  className="mb-3"
+                  placeholder="Email Address"
+                  onChange={(e) => onFormUpdate("email", e.target.value)}
+                />
+              </label>
+              <label>
+                Enter Message
+                <Form.Control
+                  as="textarea"
+                  rows="7"
+                  cols={"70"}
+                  value={formDetails.message}
+                  placeholder="drop the message here"
+                  className="mb-3"
+                  style={{
+                    boxShadow: "3px 3px 7px grey",
+                    borderRadius: "5px",
+                  }}
+                  onChange={(e) => onFormUpdate("message", e.target.value)}
+                />
+              </label>
               <Button
                 variant="dark"
                 className="px-5"

@@ -16,7 +16,11 @@ const About = () => {
   <Container className="py-3 about" style={{fontFamily:"roboto"}} id='about'>
     <h3 
       className="display-6 text-center mb-3 py-1"
-      style={{color:"#40E0D0", textShadow:"5px 3px 3px #048a7c", fontWeight:"bold"}}
+      style={{
+        color:"#40E0D0", 
+        textShadow:"5px 3px 3px #048a7c", 
+        fontWeight:"bold"
+      }}
       >ABOUT ME</h3>
     <Row className="align-items-center">
       <Col xs={12} md={5} className="mb-3">
